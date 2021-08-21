@@ -1,0 +1,174 @@
+:root {
+    --dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --d-grayish-magenta: hsl(303, 10%, 53%);
+    --l-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --font-1: 'Spartan', sans-serif;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* ===================PARENT BOX============================ */
+.parent-box {
+    padding: 6.5rem 8rem;
+    padding-right: 0rem;
+    padding-bottom: 0px;
+}
+
+/* =================================FIRST BOX================================ */
+.first-box {
+    display: flex;
+    flex-direction: row;
+} 
+
+/* =============================INSIDE PRODUCTS=========================== */
+.products {
+    width: 400px;
+    height: 200px;
+    text-align: left;
+}
+
+.products>h1 {
+    color: var(--dark-magenta);
+    font-family: var(--font-1);
+    font-weight: bolder;
+    width: 280px;
+}
+
+.products>p {
+    width: 30vmax;
+    color: var(--d-grayish-magenta);
+    font-family: var(--font-1);
+    font-size: 0.8rem;
+    padding-top: 0.55rem;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+/* =============================RATINGS PART ONLY========================== */
+
+.ratings {
+    width: 400px;
+    height: 200px;
+}
+
+.rat1,
+.rat2,
+.rat3 {
+    background-color: var(--l-grayish-magenta);
+    width: 400px;
+    display: flex;
+    padding: 0.6rem;
+    margin: 1rem;
+    border-radius: 7px;
+    font-family: var(--font-1);
+    color: var(--dark-magenta);
+}
+
+.rat1>img {
+    width: 1rem;
+    padding: 0.05rem;
+}
+
+.rat2>img {
+    width: 1rem;
+    padding: 0.05rem;
+}
+
+.rat3>img {
+    width: 1rem;
+    padding: 0.05rem;
+}
+
+.rat1>h5 {
+    padding-left: 10%;
+}
+
+.rat2>h5 {
+    padding-left: 10%;
+}
+
+.rat3>h5 {
+    padding-left: 10%;
+}
+
+.rat2 {
+    position: relative;
+    left: 10%;
+}
+
+.rat3 {
+    position: relative;
+    left: 20%;
+}
+
+/* --------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+/* ------------------------------------------------second box---------------------------------------------------- */
+.second-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 85vw;
+    color: white;
+    font-family: var(--font-1);
+    font-weight: 600;
+    font-size: 0.7rem;
+    /* position: relative; */
+}
+
+.pfp {
+    width: 300px;
+    background-color: var(--dark-magenta);
+    padding: 1.5rem;
+    border-radius: 7px;
+    margin: 1rem;
+}
+
+.per-1 {
+    position: relative;
+    top: 1rem;
+}
+
+.per-2 {
+    position: relative;
+    top: 2rem;
+}
+
+.per-3 {
+    position: relative;
+    top: 3rem;
+}
+
+/* ================INSIDE PER-1====================== */
+.header {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.header>img {
+    border-radius: 50px;
+    width: 2rem;
+    border: 2px solid white;
+    overflow: hidden;
+}
+
+.names {
+    padding-left: 1rem;
+}
+
+.names>p:nth-child(2) {
+    font-weight: 400;
+    padding-top: 0.3rem;
+    color: var(--soft-pink);
+}
+
+.pfp>p {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
